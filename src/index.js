@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import DateButton from "./components/ShowDateButton";
+import DateBox from "./components/DateBox";
 
 class App extends Component {
   render() {
     return (
       <div>
-        Hello
+        <DateButton />
+        <DateBox />
       </div>
     );
   }
