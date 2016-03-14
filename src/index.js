@@ -31,6 +31,17 @@ class App extends Component {
     );
   }
 
+  _getCurrentDateInfo() {
+    var date = new Date;
+    var month = date.getMonth() + 1;
+    var numberDate = date.getDate();
+    return {
+      date: date,
+      month: month,
+      numberDate: numberDate
+    };
+  }
+
   _getNewMonthName(monthIndex) {
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     return months[monthIndex];
