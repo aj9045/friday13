@@ -31,6 +31,18 @@ class App extends Component {
     );
   }
 
+  _getNewMonthName(monthIndex) {
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return months[monthIndex];
+  }
+
+  _getFullDate(date) {
+    var month = this._getNewMonthName(date.getMonth());
+    var day = date.getDate();
+    var year = date.getFullYear();
+    return (month + " " + day + ", " + year);
+  };
+
 }
 
 ReactDOM.render(<App />, document.querySelector(".container"));
