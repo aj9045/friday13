@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import DateButton from "./components/ShowDateButton";
+import DateButton from "./components/DateButton";
 import DateBox from "./components/DateBox";
 
 class App extends Component {
