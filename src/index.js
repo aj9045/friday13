@@ -11,12 +11,8 @@ class App extends Component {
   }
 
   componentWillMount() {
-    var currentDate = this._getFullDate(new Date);
     var nextDate = this._getNextFriday13();
-    this.setState({
-      currentDate: currentDate,
-      nextDate: nextDate
-    });
+    this.setState({nextDate: nextDate});
   }
 
   render() {
@@ -33,8 +29,10 @@ class App extends Component {
 
   _getCurrentDateInfo() {
     var date = new Date;
+    var currentDate = this._getFullDate(date);
     var month = date.getMonth() + 1;
     var numberDate = date.getDate();
+    this.setState({currentDate: currentDate});
     return {
       date: date,
       month: month,
