@@ -1,1 +1,4 @@
-style.css
+body {
+  background-image: url("../assets/fog.jpg");
+  background-size: 1500px;
+}
