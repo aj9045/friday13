@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     if (!this.state.nextDate) {
-      return <div>Loading...</div>;
+      return <div className="loading">Loading...</div>;
     }
     return (
       <div className="app">
