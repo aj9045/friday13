@@ -2,3 +2,27 @@ body {
   background-image: url("../assets/fog.jpg");
   background-size: 1500px;
 }
+
+h1, h2 {
+  color: #F1FFF6;
+  text-align: center;
+  font-weight: normal;
+}
+
+.app {
+  width: 60%;
+  min-height: 375px;
+  margin: 0 auto;
+  background-color: rgba(40, 76, 57, .5);
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  border-radius: 10px;
+}
+
+.app__today, .app__nextFriday {
+  flex: 1;
+  font-family: "Finger Paint", cursive;
+  font-weight: lighter;
+}
