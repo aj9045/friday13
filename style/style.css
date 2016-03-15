@@ -9,6 +9,11 @@ h1, h2 {
   font-weight: normal;
 }
 
+.loading {
+  color: #F1FFF6;
+  text-align: center;
+}
+
 .app {
   width: 60%;
   min-height: 375px;
