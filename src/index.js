@@ -20,9 +20,15 @@ class App extends Component {
       return <div>Loading...</div>;
     }
     return (
-      <div>
-        <div>Today's Date: {this.state.currentDate}</div><div style={{display:"none"}}>'</div>
-        <div>Next Friday the 13th: {this.state.nextDate}</div>
+      <div className="app">
+        <div className="app__today">
+          <h2>Today's Date:</h2>
+          <h3>{this.state.currentDate}</h3>
+        </div>
+        <div className="app__nextFriday">
+          <h2>Next Friday the 13th:</h2>
+          <h3>{this.state.nextDate}</h3>
+        </div>
       </div>
     );
   }
