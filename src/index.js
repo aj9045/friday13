@@ -22,12 +22,12 @@ class App extends Component {
     return (
       <div className="app">
         <div className="app__today">
-          <h2>Today's Date:</h2>
-          <h3>{this.state.currentDate}</h3>
+          <h1>Today's Date:</h1>
+          <h2>{this.state.currentDate}</h2>
         </div>
         <div className="app__nextFriday">
-          <h2>Next Friday the 13th:</h2>
-          <h3>{this.state.nextDate}</h3>
+          <h1>Next Friday the 13th:</h1>
+          <h2>{this.state.nextDate}</h2>
         </div>
       </div>
     );
