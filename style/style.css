@@ -29,5 +29,4 @@ h1, h2 {
 .app__today, .app__nextFriday {
   flex: 1;
   font-family: "Finger Paint", cursive;
-  font-weight: lighter;
 }
